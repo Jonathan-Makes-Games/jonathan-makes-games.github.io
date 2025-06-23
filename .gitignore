@@ -1,0 +1,113 @@
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Logs and databases
+*.log
+*.tmp
+*.temp
+
+# Compiled source #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.dylib
+*.pdb
+
+# Build directories
+/build/
+/bin/
+/dist/
+/out/
+/obj/
+/Debug/
+/Release/
+
+# Godot
+.import/
+.export/
+export.cfg
+export_presets.cfg
+.godot/
+.editor/
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.suo
+*.userprefs
+*.pidb.meta
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb
+*.sln.docstates
+
+# Unreal
+*.xcodeproj
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/editorSettings.json
+
+# Rider
+.idea/
+*.sln.iml
+
+# Backup files
+*~
+*.bak
+*.swp
+*.tmp
+
+# Git LFS
+*.psd
+*.png
+*.jpg
+*.jpeg
+*.tga
+*.gif
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.mp4
+*.mov
+*.avi
+*.fbx
+*.obj
+*.blend
+*.gltf
+*.glb
+
+# Do not ignore editorSettings (needed for builds)
+!editorSettings

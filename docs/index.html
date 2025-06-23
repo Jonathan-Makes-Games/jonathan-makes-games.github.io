@@ -14,7 +14,8 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #181a1b; /* dark background */
+            color: #f5f6fa; /* light text */
         }
         .container {
             text-align: center;
@@ -25,27 +26,49 @@
         .logo {
             max-width: 100%;
             margin-bottom: 20px;
+            filter: drop-shadow(0 0 8px #000a); /* subtle shadow for visibility */
         }
         .discord-button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #004a82ff;
-            color: white;
+            background-color: #004A82;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
             margin-top: 20px;
+            box-shadow: 0 2px 8px #0004;
+            transition: background 0.2s;
+        }
+        .discord-button:hover {
+            background-color: #4752c4;
+        }
+        /* Simplify .projects-button style, remove .top variant and extra margin */
+        .projects-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:#004A82;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px #0004;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+        .projects-button:hover {
+            background-color: #3a4757;
         }
         @media (min-width: 768px) {
             .logo {
                 content: url('logo_desktop.png');
-                max-width: 80%; /* Adjust this value as needed */
+                max-width: 50%;
             }
         }
         @media (max-width: 767px) {
             .logo {
                 content: url('logo_mobile.png');
-                max-width: 80%; /* Adjust this value as needed */
+                max-width: 50%;
             }
         }
     </style>
@@ -53,7 +76,10 @@
 <body>
     <div class="container">
         <img src="logo_mobile.png" alt="Jonathan Makes Games™" class="logo">
-        <a href="https://discord.gg/8zW4yTH7Th" class="discord-button">Join Discord</a>
+        <div style="display: flex; gap: 16px; justify-content: center;">
+            <a href="projects/index.html" class="projects-button">Projects</a>
+            <a href="https://discord.gg/8zW4yTH7Th" class="discord-button">Join Discord</a>
+        </div>
     </div>
 </body>
 </html>
